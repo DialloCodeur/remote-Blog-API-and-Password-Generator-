@@ -46,17 +46,5 @@
       ],
       "createdAt": "Fri, 01 Aug 2025 20:18:40 GMT",
       "updatedAt": "Wed, 06 Aug 2025 21:20:46 GMT"
-   },
-   {
-      "id": 1754514931307,
-      "title": "My Fifth Blog Post AI",
-      "content": "This is the content of my fifth blog post.",
-      "category": "Technology",
-      "tags": [
-         "Tech",
-         "Programming"
-      ],
-      "createdAt": "Wed, 06 Aug 2025 21:15:31 GMT",
-      "updatedAt": "Wed, 06 Aug 2025 21:15:31 GMT"
    }
 ]

@@ -60,16 +60,12 @@ export function determinePasswordStrength(passwordDisplay, strengthDisplay, firs
         strengthDisplay.textContent = "";
     }
 }
-
 const myTemplate = document.getElementById('tooltip');
 const TooltipTemp = myTemplate.content.cloneNode(true); 
 const Tooltip = TooltipTemp.querySelector('p');
 const checkedCircle = TooltipTemp.querySelector('i')
 export async function copyToClipboard(text){
-    if(!text){
-        console.log('Aucun texte à copier');  
-        return; 
-    }
+   if(!text) return;
    try{
      await navigator.clipboard.writeText(text);
      document.body.append(Tooltip, checkedCircle);
@@ -77,12 +73,18 @@ export async function copyToClipboard(text){
      Tooltip.style.opacity = 1;
      Tooltip.style.color = "aqua";
      checkedCircle.style.color = "green";
-     console.log('Texte copié avec succès');
      setTimeout(() => {
         Tooltip.style.opacity = 0;
         checkedCircle.style.opacity = 0;
      }, 1000);
     }catch(err){
-    console.log('Erreur de copie');
+     Tooltip.textContent = "An error occured";
+     Tooltip.style.opacity = 1;
+     Tooltip.style.color = "red";
+     checkedCircle.style.color = "red";
+     setTimeout(() => {
+        Tooltip.style.opacity = 0;
+        checkedCircle.style.opacity = 0;
+     }, 1000);
     }
 }

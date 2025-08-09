@@ -13,7 +13,6 @@ const firstStrengthBar = document.querySelector('.div1');
 const secondStrengthBar = document.querySelector('.div2');
 const thirdStrengthBar = document.querySelector('.div3');
 const fourthStrengthBar = document.querySelector('.div4');
-
 passwordLengthDisplay.textContent = adjustPasswordLength.value;
 adjustPasswordLength.addEventListener('input', (event) => {
     passwordLengthDisplay.textContent = event.target.value;
@@ -48,17 +47,15 @@ generateButton.addEventListener('click', () => {
     passwordDisplay.value = finalPassword;
     determinePasswordStrength(passwordDisplay, strengthDisplay, firstStrengthBar, secondStrengthBar, thirdStrengthBar, fourthStrengthBar);
 });
-
 export const copyButton = document.querySelector('.copy-btn');
 copyButton.addEventListener('click', () => {
     copyToClipboard(passwordDisplay.value);
 });
-
 const switchOnDarkMode = document.getElementById('switch-on-dark-mode');
 switchOnDarkMode.addEventListener('change', () => {
     if(switchOnDarkMode.checked){
     document.body.style.backgroundColor = "black"
     }else{
-        document.body.style.backgroundColor = "white";
+        document.body.style.backgroundColor = "white"; 
     }
 })

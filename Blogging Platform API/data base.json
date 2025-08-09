@@ -37,7 +37,7 @@
    },
    {
       "id": 1754079520422,
-      "title": "My My Updated Blog Post AI",
+      "title": "My Updated Blog Post AI",
       "content": "This is the updated of my fourth blog post.",
       "category": "Technology",
       "tags": [
@@ -46,5 +46,29 @@
       ],
       "createdAt": "Fri, 01 Aug 2025 20:18:40 GMT",
       "updatedAt": "Wed, 06 Aug 2025 21:20:46 GMT"
+   },
+   {
+      "id": 1754079520422,
+      "title": "My Fifth Blog Post",
+      "content": "This is the content of my fifth blog post.",
+      "category": "Technology",
+      "tags": [
+         "Tech",
+         "Programming"
+      ],
+      "createdAt": "Fri, 01 Aug 2025 20:18:40 GMT",
+      "updatedAt": "Fri, 01 Aug 2025 20:18:40 GMT"
+   },
+   {
+      "id": 1754079520422,
+      "title": "My Sixth Blog Post",
+      "content": "This is the content of my sixth blog post.",
+      "category": "Technology",
+      "tags": [
+         "Tech",
+         "Programming"
+      ],
+      "createdAt": "Fri, 01 Aug 2025 20:18:40 GMT",
+      "updatedAt": "Fri, 01 Aug 2025 20:18:40 GMT"
    }
 ]

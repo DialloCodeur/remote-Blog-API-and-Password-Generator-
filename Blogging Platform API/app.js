@@ -1,7 +1,7 @@
 import express from "express";
 import{savePost, readPosts, verifyFields, saveUpdatedPosts} from "./functions.js";
 
-const app = express(); 
+const app = express(); git 
 app.use(express.json());
 app.post('/posts', (req, res) => {
     let myBody = req.body;
